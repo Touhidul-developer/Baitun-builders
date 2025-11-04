@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landowner page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px]  focus-within px-[45px] py-[10px]">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="items-center mx-auto md:mx-0">
+            <img src="/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
+
+            <!-- Main menu -->
+            <ul id="main-menu" class="hidden md:flex md:items-center">
+                <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Properties -->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!--Businesses-->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Businesses</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+                <!-- Construction Status -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
+                <!-- NRB -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
+                <!-- Contact -->
+                <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">contact us</a></li>
+                
+
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button id="nav-toggle" class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+                <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                </svg>
+                <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-3 px-2">
+            <ul class="space-y-1">
+                <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Mobile Properties accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-properties">
+                    Properties
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-properties" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!-- Mobile Businesses accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-businesses">
+                    Businesses
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-businesses" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
+                <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">contact us</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="bg-[#161616] grid grid-cols-1 md:grid-cols-2">
+    <!-- Left image -->
+    <div class="flex justify-center m-6 md:m-12">
+        <img 
+        src="/landowner-1.jpg" 
+        alt="Landowner Image" 
+        class="w-full h-auto object-cover rounded-md"
+        >
+    </div>
+
+    <!-- Right side - testimonial text -->
+    <div class="text-white text-center flex flex-col justify-center m-6 md:m-12">
+        <p class="text-sm md:text-xl font-semibold leading-relaxed mb-6">
+        "We are very glad we chose bti as the developer of the project on our land. 
+        Working with them has been a pleasant experience as they handled matters very smoothly."
+        </p>
+        <h3 class="text-base md:text-lg font-medium">
+        Mrs. Momota Muqtader &amp; her Family
+        </h3>
+        <p class="text-gray-400 text-sm md:text-base">
+        Landowner of Rosalyn, Uttara - 1
+        </p>
+
+        <!-- Navigation arrows -->
+        <div class="flex justify-center gap-4 mt-8">
+        <button class="p-2 border-2 border-gray-400 hover:bg-gray-600 rounded-md transition">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="w-5 h-5" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button class="p-2 border-2 border-gray-400 hover:bg-gray-600 rounded-md transition">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="w-5 h-5" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+        </div>
+    </div>
+    </section>
+
+    <section class="relative bg-cover bg-center bg-no-repeat min-h-screen flex flex-col items-center justify-between pt-16" style="background-image: url('/slider2.webp');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Top Text Box (Right Side) -->
+        <div class="relative z-10 bg-black/70 text-white p-6 md:p-8 md:w-[70%] md:self-end">
+            <h2 class="text-lg md:text-xl font-semibold mb-3 uppercase">Why Choose BTI as a Partner to Develop Your Land?</h2>
+            <p class="text-sm md:text-base leading-relaxed">
+                Dealing with real estate developers in Bangladesh is often complex and risky which does not have to be.
+                Though the joint venture process, to date, remains bureaucratic and difficult, we have made it 
+                <a href="#" class="underline hover:text-gray-300">easier and hassle-free</a>. We believe no one else can offer the same level of expertise as us and our landowners who have partnered with us, think so too. Read about their 
+                <a href="#" class="underline hover:text-gray-300">experience with us</a> and take a look at some of our 
+                <a href="#" class="underline hover:text-gray-300">finished projects</a>.
+            </p>
+        </div>
+
+        <!-- Bottom Text Box (Left Side) -->
+        <div class="relative z-10 bg-black/70 text-white p-6 md:p-8 md:w-[70%] mt-8 md:self-start">
+            <h2 class="text-lg md:text-xl font-semibold mb-3 uppercase">How is BTI Different?</h2>
+            <p class="text-sm md:text-base leading-relaxed">
+                bti is one of the few companies known for being trustworthy as a joint venture partner for developing your land. As one of the pioneers in the sector, we have retained our position as a top real estate developer and have built this reputation of reliability over the good part of half a century.
+            </p>
+            <p class="text-sm md:text-base mt-3 leading-relaxed">
+                We fully understand your dilemma and know how to tackle the complex systems involved in developing your property. Our vast experience has left us in a better position than most, to empathize and take care of all your concerns regarding the big decision to develop your land.
+            </p>
+            <p class="text-sm md:text-base mt-3 leading-relaxed">
+                With a specialized customer service team along with architects, engineers, and logistic support, we work to make the process stress-free for you and continue to be at your service for years to come. 
+                <a href="#" class="underline hover:text-gray-300">Find out more about us and what makes us different.</a>
+            </p>
+        </div>
+    </section> 
+    <!-- Full-width Image -->
+    <div class="px-12">
+        <img src="/landowner-2.jpg" alt="Landowner Image" class="w-full h-auto object-cover rounded-md my-12">
+    </div>
+
+    <div class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-end" style="background-image: url('/slider4.webp')">
+        <div class="relative z-10 bg-black/70 text-white p-6 md:p-8 md:w-[60%] text-center md:text-left">
+            <h2 class="text-lg md:text-xl font-semibold mb-3 uppercase">WANT TO KNOW MORE?</h2>
+            <p class="text-sm md:text-base mb-4">
+            We have been doing this for more than 40 years. Construction is our business along with ensuring full satisfaction of our customers and business partners. Don’t just take our word for it. You can read some of the comments of the landowners for whom we have developed properties over the years. You can also see the projects we have completed so far as seeing is believing. Entrust us as your joint venture partner. Be a part of bti, the leading real estate developer in Bangladesh.
+            </p>
+            <button class="border border-white text-white rounded-sm px-4 py-2 hover:bg-white text-sm font-bold hover:text-black transition duration-500">FOR JOINT VENTURE PARTNERSHIP</button>
+        </div>
+    </div>
+
+    <section class="bg-[#333333] text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto rounded-md shadow-lg p-10 flex flex-col md:flex-row gap-10">
+
+            <!-- Left Side: Get in Touch -->
+            <div class="md:w-1/2 space-y-5">
+                <h2 class="text-xl font-semibold">Get in Touch</h2>
+                <div class="space-y-3 text-gray-300 text-sm">
+                    <p class="flex items-center gap-2 font-bold hover:underline">
+                    <span class="text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                    </span> 16604
+                    </p>
+                    <p class="flex items-center gap-2 font-bold hover:underline">
+                    <span class="text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    </span> +8809813191919
+                    </p>
+                    <p class="flex items-center gap-2 font-bold hover:underline">
+                    <span class="text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    </span> info@btibd.org
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="md:w-1/2">
+            <form class="space-y-5">
+                <div>
+                <label class="block text-sm font-medium mb-1">NAME <span class="text-red-500">*</span></label>
+                <input type="text" class="w-full border-b p-2 focus:outline-none">
+                </div>
+
+                <div>
+                <label class="block text-sm font-medium mb-1">EMAIL <span class="text-red-500">*</span></label>
+                <input type="email" class="w-full border-b p-2 focus:outline-none">
+                </div>
+
+                <div>
+                <label class="block text-sm font-medium mb-1">CONTACT NUMBER <span class="text-red-500">*</span></label>
+                <input type="text" class="w-full border-b p-2 focus:outline-none">
+                </div>
+
+                <div>
+                <label class="block text-sm font-medium mb-1">MESSAGE <span class="text-red-500">*</span></label>
+                <textarea rows="3" class="w-full border-b p-2 focus:outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gray-300 text-black font-semibold py-2 rounded-md hover:bg-gray-400 transition">
+                Submit
+                </button>
+            </form>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
+    <!--Main Footer -->
+    <footer class="bg-[#1C1C1C] text-gray-300 border-t border-gray-700">
+        <div class="bg-[#EAEAEA] text-gray-800 py-8">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-12 text-center md:text-left">
+                <div>
+                    <h3 class="font-semibold text-[18px] uppercase">Subscribe to our newsletter</h3>
+                    <p class="text-xs text-[#878787]">Get all the latest updates easily</p>
+                </div>
+                <form class="flex flex-col sm:flex-row w-full sm:w-auto gap-2 justify-center md:justify-end">
+                    <input type="text" placeholder="Your Name" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <input type="email" placeholder="Your Email" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <button type="submit" class="bg-[#1C1C1C] text-white px-4 py-2 rounded hover:bg-gray-800 text-sm w-full sm:w-auto">Connect</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="max-w-7xl mx-auto py-8 px-12">
+            <div class="flex flex-col justify-center items-center gap-6">
+                <!-- Links -->
+                <div class="md:flex-row flex flex-col justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-wide text-center">
+                    <a href="#" class="hover:text-white text-[#878787]">Blog</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Newsletter</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Video</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Gallery</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Handed Over Projects</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Reviews</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Real Estate Update</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Career</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Feedback</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Privacy</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-4 text-[28px]">
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="text-center text-xs mt-6 text-[#878787] leading-relaxed">
+            <p>bti Celebration Point, Plot: 3 & 5, Road: 113/A, Gulshan-2, Dhaka-1212</p>
+            <p class="mt-1">bti - Building Technology & Ideas Ltd. © 1984–2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#"
+    class="fixed bottom-2 right-6 bg-green-500 text-white rounded-full p-1.5 shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center">
+    <!-- WhatsApp SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12.04 2C6.58 2 2.04 6.54 2.04 12c0 2.1.55 4.06 1.6 5.8L2 22l4.3-1.55A9.96 9.96 0 0 0 12.04 22c5.46 0 9.99-4.54 9.99-10S17.5 2 12.04 2zm5.86 14.3c-.25.7-1.44 1.33-2 1.41-.53.08-1.2.11-1.94-.12-.45-.14-1.02-.32-1.77-.63-3.11-1.36-5.13-4.54-5.29-4.76-.15-.22-1.26-1.67-1.26-3.19 0-1.52.79-2.26 1.07-2.57.28-.3.61-.38.82-.38.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.62.85 2.14.93 2.3.07.16.12.34.02.55-.1.22-.15.35-.29.54-.15.18-.3.4-.43.54-.14.15-.28.31-.12.61.15.3.66 1.09 1.41 1.77.97.86 1.8 1.13 2.1 1.26.3.13.48.11.66-.07.18-.18.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.36.08.12.08.72-.17 1.42z"/>
+    </svg>
+    </a>
+
+
+    <!-- JavaScript -->
+    <script src="./main.js" defer></script>
+
+</body>
+</html>

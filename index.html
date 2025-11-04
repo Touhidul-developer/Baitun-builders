@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px]  focus-within px-[45px] py-[10px]">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="items-center mx-auto md:mx-0">
+            <img src="/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
+
+            <!-- Main menu -->
+            <ul id="main-menu" class="hidden md:flex md:items-center">
+                <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Properties -->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!--Businesses-->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Businesses</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+                <!-- Construction Status -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
+                <!-- NRB -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
+                <!-- Contact -->
+                <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">contact us</a></li>
+                
+
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button id="nav-toggle" class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+                <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                </svg>
+                <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-3 px-2">
+            <ul class="space-y-1">
+                <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Mobile Properties accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-properties">
+                    Properties
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-properties" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!-- Mobile Businesses accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-businesses">
+                    Businesses
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-businesses" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
+                <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">contact us</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slider Section -->
+    <div class="flex h-[45vh] md:h-screen justify-items-start w-full overflow-hidden m-0 p-0">
+        <!-- 1slider -->
+        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
+            <img src="/slider1.webp"
+                alt="Luxury"
+                class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
+            <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+                classic
+            </div>
+        </div>
+
+        <!-- 2slider -->
+        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
+            <img src="/slider2.webp"
+                alt="Luxury"
+                class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
+            <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+                Luxury
+            </div>
+        </div>
+
+        <!-- 3slider -->
+        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
+            <img src="/slider3.webp"
+                alt="Luxury"
+                class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
+            <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+                Wellness Communities
+            </div>
+        </div>
+
+        <!-- 4slider (hidden on mobile) -->
+        <div class="relative flex-1 cursor-pointer transition-all duration-700 ease-out hover:flex-[4] group">
+            <img src="/slider4.webp"
+                alt="Luxury"
+                class="w-full h-[45vh] md:h-full object-cover object-left transition-transform duration-700 ease-out origin-left saturate-[0.8] scale-105 group-hover:brightness-100 group-hover:saturate-120 group-hover:scale-100 m-0 p-0">
+            <div class="absolute bottom-0 left-0 bg-black/70 text-white px-2 md:px-4 py-1 md:py-2 tracking-widest uppercase text-[10px] md:text-sm font-semibold rotate-180 [writing-mode:vertical-rl] transition-opacity duration-500 opacity-100 group-hover:opacity-0">
+                Commercial
+            </div>
+        </div>
+    </div>
+ 
+    <!-- end slider section -->
+
+    <!-- text slider play -->
+    <div class="w-full bg-black text-center text-white py-2 overflow-hidden">
+        <marquee behavior="scroll" direction="left">
+            Click here to know about our <span class="underline font-semibold text-yellow-300">exclusive sales offer!</span>
+            Click here to know about our <span class="underline font-semibold text-yellow-300">exclusive sales offer!</span>
+            Click here to know about our <span class="underline font-semibold text-yellow-300">exclusive sales offer!</span>
+        </marquee>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <div class="w-full bg-[#1C1C1C]">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between py-4 px-4 sm:px-[45px] gap-4">
+            <div class="font-bold text-white text-xl text-center sm:text-left w-full sm:w-auto flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-plus-icon lucide-house-plus"><path d="M12.35 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v2.35"/><path d="M14.8 12.4A1 1 0 0 0 14 12h-4a1 1 0 0 0-1 1v8"/><path d="M15 18h6"/><path d="M18 15v6"/></svg>
+               <p> FIND A PROPERTY</p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full sm:w-auto">
+                <select class="bg-[#1C1C1C] text-white px-3 py-2 text-[14px] border-2 rounded-sm w-full sm:w-auto">
+                    <option>Select a Location</option>
+                    <option>Dhaka</option>
+                    <option>Chittagong</option>
+                </select>
+                <button class="bg-[#1C1C1C] text-white px-5 py-2 text-[14px] rounded-[3px] hover:bg-gray-700 border-2 w-full sm:w-auto">
+                    Search Property
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT BTI SECTION -->
+    <section class="py-12 px-12">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Column: Text Content -->
+            <div>
+                <p class="text-gray-800 leading-relaxed text-lg">
+                Having designed, built, and delivered residential and commercial addresses
+                for last 4 decades, <span class="font-semibold">bti</span> is a well-known
+                and highly reputed real estate company in Bangladesh. Our success is based
+                on our track record of reliability and customer-centricity. Till date, we
+                have completed and handed over more...</p>
+              <a href="#"
+                class="inline-block mt-4 text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Read more</a>
+            </div>
+
+            <!-- Right Column: Buttons -->
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">TRUSTWORTHY AND RELIABLE </button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition"> HIGH-GRADE CONSTRUCTION </button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition"> MODERN DESIGN </button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition"> RANGE OF CHOICES </button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">UNCOMPROMISED SAFETY </button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">AFTER-SALES SERVICES</button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">GOING THE EXTRA MILE</button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">OUR CREDENTIALS</button>
+                <button class="bg-[#6C6C6C] text-white text-center font-semibold text-sm underline py-2 px-3 rounded shadow hover:bg-[#0d0a0abc] transition">AND MORE!</button>
+            </div>
+        </div>
+    </section>
+    <!-- end about bti section -->
+
+    <!-- LANDOWNER SECTION -->
+    <section class=" py-12">
+        <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left Content -->
+            <div class="lg:w-1/2">
+                <h2 class="text-[18px] font-extrabold mb-4">DREAM WITH US, PARTNER WITH US</h2>
+                <p class="text-gray-700 mb-6">
+                    Relax and reap the benefits of owning property in Bangladesh. See your property transform as per your dreams, sooner than you anticipated!
+                </p>
+                <blockquote class="border-l-4 border-gray-500 pl-12 italic text-gray-800 text-xl mb-4">
+                    "bti stays true to its commitment, guaranteeing on-time or even ahead of schedule handover, a trait that I admire them for."
+                    <p class="font-semibold mt-5">Md. Shafiqul Anwar</p>
+                    <p class="text-gray-500 text-sm mb-6">Landowner, Royal Oaks</p>
+                </blockquote>
+                <button class="bg-transparent border-2 border-gray-800 text-gray-800 px-4 py-2.5 rounded hover:bg-[#1C1C1C] hover:text-white transition font-bold text-[12px]">
+                    LANDOWNERS
+                </button>
+            </div>
+            <!-- Right Content (Video/Image) -->
+            <div class="lg:w-1/2 relative">
+                <img src="/slider4.webp" alt="BTI Video" class="shadow-lg">
+                <div class="absolute inset-0 flex justify-center items-center">
+                    <button class="bg-black bg-opacity-50 p-4 rounded-full hover:bg-opacity-70 transition">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- product Sections -->
+    <section class="bg-[#1C1C1C] text-white py-8 px-4 md:py-12 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <!-- Luxury Collection -->
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-4 gap-2 sm:gap-0">
+                        <h2 class="text-lg md:text-xl font-semibold tracking-wide uppercase">Luxury Collection</h2>
+                        <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                            Dhaka
+                        </button>
+                    </div>
+                    <div class="relative w-full overflow-hidden">
+                        <img src="/slider2.webp" class="w-full h-64 sm:h-72 md:h-72 object-cover opacity-90 transition-transform duration-500 hover:scale-105">
+                        <button class="absolute inset-0 flex items-center justify-center" aria-label="Play Luxury Collection Video">
+                            <div class="bg-black bg-opacity-70 rounded-full p-4 hover:bg-opacity-80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-8 h-8">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Classic Collection -->
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-4 gap-2 sm:gap-2">
+                        <h2 class="text-lg md:text-xl font-semibold tracking-wide uppercase">Classic Collection</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                                Dhaka
+                            </button>
+                            <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                                Chattogram
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative w-full overflow-hidden">
+                        <img src="/slider4.webp" alt="Classic Collection" class="w-full h-64 sm:h-72 md:h-72 object-cover opacity-90 transition-transform duration-500 hover:scale-105">
+                        <button class="absolute inset-0 flex items-center justify-center" aria-label="Play Classic Collection Video">
+                            <div class="bg-black bg-opacity-70 rounded-full p-4 hover:bg-opacity-80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-8 h-8">
+                                <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-[#1C1C1C] text-white py-8 px-4 md:py-12 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <!-- Luxury Collection -->
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-4 gap-2 sm:gap-0">
+                        <h2 class="text-lg md:text-xl font-semibold tracking-wide uppercase">Luxury Collection</h2>
+                        <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                            Dhaka
+                        </button>
+                    </div>
+                    <div class="relative w-full overflow-hidden">
+                        <img src="/slider2.webp" class="w-full h-64 sm:h-72 md:h-72 object-cover opacity-90 transition-transform duration-500 hover:scale-105">
+                        <button class="absolute inset-0 flex items-center justify-center" aria-label="Play Luxury Collection Video">
+                            <div class="bg-black bg-opacity-70 rounded-full p-4 hover:bg-opacity-80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-8 h-8">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Classic Collection -->
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mb-4 gap-2 sm:gap-2">
+                        <h2 class="text-lg md:text-xl font-semibold tracking-wide uppercase">Classic Collection</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                                Dhaka
+                            </button>
+                            <button class="bg-[#1C1C1C] text-white border-2 border-[#878787] text-xs sm:text-sm px-2.5 py-2 rounded-sm font-semibold uppercase transition-colors duration-400 hover:bg-white hover:text-[#1C1C1C]">
+                                Chattogram
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative w-full overflow-hidden">
+                        <img src="/slider4.webp" alt="Classic Collection" class="w-full h-64 sm:h-72 md:h-72 object-cover opacity-90 transition-transform duration-500 hover:scale-105">
+                        <button class="absolute inset-0 flex items-center justify-center" aria-label="Play Classic Collection Video">
+                            <div class="bg-black bg-opacity-70 rounded-full p-4 hover:bg-opacity-80 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-8 h-8">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customar review-->
+    <section class="bg-[#1C1C1C] text-center text-white px-4 py-6">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+            <h1 class="text-lg md:text-xl font-semibold uppercase">Reviews matter to us. They should matter to you too.</h1>
+            <div class="flex flex-col sm:flex-row justify-center gap-3">
+                <button class="border-2 border-white px-4 py-2 uppercase text-[13px] font-semibold hover:bg-white hover:text-black transition">Customer Reviews</button>
+                <button class="border-2 border-white px-4 py-2 uppercase text-[13px] font-semibold hover:bg-white hover:text-black transition">Landowner Reviews</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <!-- Customer Review Image -->
+            <div class="relative group overflow-hidden rounded-md">
+                <img src="/slider1.webp" alt="Customer Reviews" class="w-full object-cover">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                    <h2 class="text-2xl font-semibold uppercase">Customer</h2>
+                    <p class="text-sm mt-1 uppercase">Reviews</p>
+                </div>
+            </div>
+            <!-- Landowner Review Image -->
+            <div class="relative group overflow-hidden rounded-md">
+                <img src="/slider1.webp" alt="Landowner Reviews" class="w-full object-cover">
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/50 text-white text-center opacity-100 group-hover:opacity-0 transition-opacity duration-500">
+                    <h2 class="text-2xl font-semibold uppercase">Landowner</h2>
+                    <p class="text-sm mt-1 uppercase">Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESSES & INITIATIVES SECTION -->
+    <section class="max-w-7xl mx-auto py-8 px-12">
+        <h1 class="text-xl font-semibold pb-8">BUSINESSES & INITIATIVES</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 1 -->
+            <div class="relative group overflow-hidden shadow-md">
+                <img src="/home-1.webp" class="w-full h-36 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h2 class="text-xl font-semibold mb-2">Square Feet Story</h2>
+                <p class="text-sm text-center px-4">Design & Build by BTI</p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="relative group overflow-hidden shadow-md">
+                <img src="/home-2.webp" class="w-full h-36 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h2 class="text-xl font-semibold mb-2">Square Feet Story</h2>
+                <p class="text-sm text-center px-4">Design & Build by BTI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="relative bg-cover bg-center bg-no-repeat h-screen max-w-7xl mx-auto flex items-center justify-center" style="background-image: url('/home-full.jpg')">
+        <div class="relative z-10 bg-black/40 text-white p-6 md:p-8 md:w-[70%] text-center md:text-center">
+            <p class="text-sm md:text-xl font-semibold  mb-4">
+                Our dedication to our customers, the strength of architectural and construction in-house teams, and an ever-evolving corporate culture make us exemplary leaders in the private housing sector.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!--Main Footer -->
+    <footer class="bg-[#1C1C1C] text-gray-300 border-t border-gray-700">
+        <div class="bg-[#EAEAEA] text-gray-800 py-8">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-12 text-center md:text-left">
+                <div>
+                    <h3 class="font-semibold text-[18px] uppercase">Subscribe to our newsletter</h3>
+                    <p class="text-xs text-[#878787]">Get all the latest updates easily</p>
+                </div>
+                <form class="flex flex-col sm:flex-row w-full sm:w-auto gap-2 justify-center md:justify-end">
+                    <input type="text" placeholder="Your Name" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <input type="email" placeholder="Your Email" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <button type="submit" class="bg-[#1C1C1C] text-white px-4 py-2 rounded hover:bg-gray-800 text-sm w-full sm:w-auto">Connect</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="max-w-7xl mx-auto py-8 px-12">
+            <div class="flex flex-col justify-center items-center gap-6">
+                <!-- Links -->
+                <div class="md:flex-row flex flex-col justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-wide text-center">
+                    <a href="#" class="hover:text-white text-[#878787]">Blog</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Newsletter</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Video</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Gallery</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Handed Over Projects</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Reviews</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Real Estate Update</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Career</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Feedback</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Privacy</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-4 text-[28px]">
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="text-center text-xs mt-6 text-[#878787] leading-relaxed">
+            <p>bti Celebration Point, Plot: 3 & 5, Road: 113/A, Gulshan-2, Dhaka-1212</p>
+            <p class="mt-1">bti - Building Technology & Ideas Ltd. © 1984–2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#"
+    class="fixed bottom-2 right-6 bg-green-500 text-white rounded-full p-1.5 shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center">
+    <!-- WhatsApp SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12.04 2C6.58 2 2.04 6.54 2.04 12c0 2.1.55 4.06 1.6 5.8L2 22l4.3-1.55A9.96 9.96 0 0 0 12.04 22c5.46 0 9.99-4.54 9.99-10S17.5 2 12.04 2zm5.86 14.3c-.25.7-1.44 1.33-2 1.41-.53.08-1.2.11-1.94-.12-.45-.14-1.02-.32-1.77-.63-3.11-1.36-5.13-4.54-5.29-4.76-.15-.22-1.26-1.67-1.26-3.19 0-1.52.79-2.26 1.07-2.57.28-.3.61-.38.82-.38.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.62.85 2.14.93 2.3.07.16.12.34.02.55-.1.22-.15.35-.29.54-.15.18-.3.4-.43.54-.14.15-.28.31-.12.61.15.3.66 1.09 1.41 1.77.97.86 1.8 1.13 2.1 1.26.3.13.48.11.66-.07.18-.18.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.36.08.12.08.72-.17 1.42z"/>
+    </svg>
+    </a>
+
+
+
+
+    <!-- JavaScript for link-->
+    <script src="./main.js" defer></script>
+</body>
+</html>

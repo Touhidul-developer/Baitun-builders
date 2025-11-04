@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px]  focus-within px-[45px] py-[10px]">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="items-center mx-auto md:mx-0">
+            <img src="/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
+
+            <!-- Main menu -->
+            <ul id="main-menu" class="hidden md:flex md:items-center">
+                <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Properties -->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!--Businesses-->
+                <li class="relative group has-submenu">
+                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Businesses</button>
+                    <!-- Submenu -->
+                    <ul id="submenu-properties"
+                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                    </ul>
+                </li>
+                <!-- Construction Status -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
+                <!-- NRB -->
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
+                <!-- Contact -->
+                <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">contact us</a></li>
+                
+
+                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button id="nav-toggle" class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+                <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+                </svg>
+                <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-3 px-2">
+            <ul class="space-y-1">
+                <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
+
+                <!-- Mobile Properties accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-properties">
+                    Properties
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-properties" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
+
+                <!-- Mobile Businesses accordion -->
+                <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-businesses">
+                    Businesses
+                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <ul id="m-businesses" class="mt-1 ml-2 space-y-1 hidden">
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
+                <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">contact us</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="relative w-full h-[200px] md:h-screen bg-[#1C1C1C] overflow-hidden">
+        <!-- Background Image (left side on desktop, full width on mobile) -->
+        <div class="absolute left-0 top-0 h-full w-full md:w-[85%] bg-[url('/about-bnner.jpg')] bg-cover bg-center opacity-90"></div>
+
+        <!-- Solid Background (right 20% only on desktop) -->
+        <div class="hidden md:block absolute right-0 top-0 h-full w-[20%] bg-[#1C1C1C]"></div>
+
+        <!-- Dark Overlay (only on image area) -->
+        <div class="absolute left-0 top-0 h-full w-full md:w-[80%] bg-black/40"></div>
+
+        <!-- Centered Text -->
+        <div class="absolute left-0 top-0 z-10 flex flex-col items-center justify-center h-full w-full md:w-[80%] text-center text-white px-4">
+            <h1 class="text-lg sm:text-xl md:text-2xl font-semibold italic leading-snug">
+                We don't just make buildings.
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl font-semibold mt-3 italic leading-snug">
+                We're in the business of customer satisfaction
+            </p>
+        </div>
+    </section>
+
+
+    
+    <!-- About textbar-1 -->
+    <div class="bg-[#1C1C1C] py-7">
+        <div class="flex flex-wrap items-center justify-center text-center px-4">
+            <h1 class="text-white font-semibold text-xl md:text-xl leading-snug">
+            ABOUT OUR PURSUIT OF EXCELLENCE SINCE 1984
+            </h1>
+        </div>
+    </div>
+
+
+    <!-- About Us Section -->
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-8 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+            <!-- Left Column -->
+            <div>
+            <p class="text-justify leading-7 py-4 text-gray-800">
+                building technology & ideas ltd. - bti is a real estate firm with high standards known for its professionalism in the industry and as one of the pioneers of the real estate sector of Bangladesh. Our dedication and years of experience with an ongoing pursuit of excellence have earned us an advantageous position in the sector. We are truly humbled by the trust and love of our customers, which has steadily grown in the last four decades.
+            </p>
+            </div>
+            <!-- Right Column -->
+            <div>
+                <ul class="flex flex-col gap-2 text-gray-200 underline">
+                    <li class="bg-[#444444] hover:bg-[#222222] px-4 py-2 rounded-md text-center md:text-left">
+                    We help you dream about your new home and make your dreams come true
+                    </li>
+                    <li class="bg-[#444444] hover:bg-[#222222] px-4 py-2 rounded-md text-center md:text-left">
+                    We provide you with the best property options that suit your needs and budget
+                    </li>
+                    <li class="bg-[#444444] hover:bg-[#222222] px-4 py-2 rounded-md text-center md:text-left">
+                    We guide you through the entire buying process, from viewing to closing
+                    </li>
+                    <li class="bg-[#444444] hover:bg-[#222222] px-4 py-2 rounded-md text-center md:text-left">
+                    We offer you after-sales services and support to ensure your satisfaction
+                    </li>
+                    <li class="bg-[#444444] hover:bg-[#222222] px-4 py-2 rounded-md text-center md:text-left">
+                    We set trends introducing innovative lifestyles in residences and work spaces.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- About textbar-2 -->
+    <div class="bg-[#1C1C1C] py-7">
+        <div class="flex flex-wrap items-center justify-center text-center px-4">
+            <h1 class="text-white font-semibold text-xl leading-snug">
+                A Step Ahead Since the beginning
+            </h1>
+        </div>
+    </div>
+    <!-- About full image -->
+     <div>
+        <img src="/about-us.jpg" alt="About Us Image" class="w-full h-auto">
+     </div>
+    <!-- About textbar-3 -->
+    <div class="bg-[#1C1C1C] py-7">
+        <div class="flex flex-wrap items-center justify-center text-center px-4">
+            <h1 class="text-white font-semibold text-xl leading-snug">
+            Our Philosophy
+            </h1>
+        </div>
+    </div>
+
+    <!-- Mission, Vision, Core Values Section -->
+    <section class="bg-[#FFFFFF] py-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Left Column -->
+            <div class="space-y-12">
+                <!-- Mission Statement -->
+                <div class="space-y-2">
+                    <div class="flex flex-col items-start gap-6">
+                        <div class="text-[24px] text-[#303030]"><i class="fas fa-bullseye"></i></div>
+                        <h2 class="text-[16px] font-semibold tracking-wide text-[#303030] uppercase">Our Mission Statement</h2>
+                    </div>
+                    <p class="text-[#000000] text-sm">To make homeownership a joyful experience.</p>
+                </div>
+
+                <!-- Vision Statement -->
+                <div class="space-y-2">
+                    <div class="flex flex-col items-start gap-6">
+                        <div class="text-xl text-[#303030]"><i class="fas fa-lightbulb"></i></div>
+                       <h2 class="text-[16px] font-semibold tracking-wide text-[#303030] uppercase">Our Vision Statement</h2>
+                    </div>
+                    <p class="text-[#000000] text-sm">To provide viable housing solutions to every segment of our society.</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <div class="flex flex-col items-start gap-6 mb-6">
+                    <div class="text-xl text-gray-800"><i class="fas fa-users"></i></div>
+                    <h2 class="text-[16px] font-semibold tracking-wide text-[#303030] uppercase">Our Core Values</h2>
+                </div>
+
+                <ul class="space-y-2 text-sm text-[#000000] list-disc list-outside">
+                    <li>Win the Customer’s Heart.</li>
+                    <li>Work Harder than Everyone Else and Strive to be the Best.</li>
+                    <li>Maintain an Entrepreneurial Spirit.</li>
+                    <li>Respect, Develop, Empower our People.</li>
+                    <li>High Morals, Honesty and Integrity.</li>
+                    <li>Speed of Work, Fight Bureaucracy and Remove Superfluous Work.</li>
+                    <li>Practice Meritocracy and Constantly Enhance Talent Density.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About textbar-4 -->
+    <div class="bg-[#1C1C1C] py-7">
+        <div class="flex flex-wrap items-center justify-center text-center px-4">
+            <h1 class="text-white font-semibold text-xl md:text-xl leading-snug">Check out how we started shaping the future 4 decades ago</h1>
+        </div>
+    </div>
+
+    <!-- updata section -->
+    <div class="h-screen">
+        <h1 class="text-center text-red-500">Update now</h1>
+    </div>
+
+    <!-- About textbar-5 -->
+    <div class="bg-[#1C1C1C] py-7">
+        <div class="flex flex-wrap items-center justify-center text-center px-4">
+            <h1 class="text-white font-semibold text-xl md:text-xl leading-snug">
+            List of our completed projects in various neighborhoods
+            </h1>
+        </div>
+    </div>
+
+    <!-- yearly record  Section -->
+    <section class="bg-[#262626] text-white font-sans">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row">
+            <!-- Left Sidebar -->
+<div class="w-full md:w-1/6 bg-neutral-800">
+  <ul class="grid grid-cols-2 md:flex md:flex-col overflow-x-auto md:overflow-visible text-sm font-extrabold">
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">1984-1990</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">1991-1995</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">1996-2000</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2001-2005</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2006-2010</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2011-2014</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2015-2017</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2018-2020</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2021-2023</li>
+    <li class="px-4 py-3 bg-[#0F4C75] cursor-pointer border-b border-[#262626]">2024-2026</li>
+  </ul>
+</div>
+
+
+            <!-- Right Content -->
+            <div class="w-full md:w-3/3 bg-neutral-800 p-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                
+                <div>
+                    <ul class="space-y-4">
+                        <li>▪ <span class="font-semibold">Cheers</span> <span class="text-gray-400">Mohammadpur (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Ikebana</span> <span class="text-gray-400">Uttara (2024)</span></li>
+                        <li>▪ <span class="font-semibold">The West End</span> <span class="text-gray-400">Banani (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Park Hill</span> <span class="text-gray-400">Bashundhara (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Finesse</span> <span class="text-gray-400">Bashundhara (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Glenwood</span> <span class="text-gray-400">Wari (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Silver Creek</span> <span class="text-gray-400">Banani (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Southern Breeze</span> <span class="text-gray-400">Bashundhara (2024)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="space-y-4">
+                        <li>▪ <span class="font-semibold">City Views</span> <span class="text-gray-400">Khilgaon (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Park Royale</span> <span class="text-gray-400">Gulshan (2024)</span></li>
+                        <li>▪ <span class="font-semibold">Blue Sky Homes</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">The Liberty</span> <span class="text-gray-400">Khilgaon (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Winsome Home</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Silver Wood</span> <span class="text-gray-400">Aftabnagar (2025)</span></li>
+                        <li>▪ <span class="font-semibold">The Destination</span> <span class="text-gray-400">Dhanmondi (2025)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="space-y-4">
+                        <li>▪ <span class="font-semibold">La Maison</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Breezy Home</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Pine Hurst</span> <span class="text-gray-400">Uttara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Shopnoeer</span> <span class="text-gray-400">Uttarkhan (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Happy Days</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Dulce Domi</span> <span class="text-gray-400">Uttara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">The Palms</span> <span class="text-gray-400">Aftabnagar (2025)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="space-y-4">
+                        <li>▪ <span class="font-semibold">Green Valley</span> <span class="text-gray-400">Jalalabad (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Royal Pines</span> <span class="text-gray-400">Mirpur (2025)</span></li>
+                        <li>▪ <span class="font-semibold">The Sunlight</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Green View</span> <span class="text-gray-400">Mirpur (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Sparkle</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">Dreamsville</span> <span class="text-gray-400">Bashundhara (2025)</span></li>
+                        <li>▪ <span class="font-semibold">New Horizons</span> <span class="text-gray-400">Purana Paltan (2025)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--discription-->
+    <div class="bg-[#EAEAEA]">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 text-justify py-6">
+            <h1 class="text-xl font-semibold text-center py-6 uppercase">We understand real estate. Period.</h1>
+            <div class="grid gap-6 text-sm pb-6">
+                <p>Our claim to fame is our due diligence towards handing over projects as per the schedule and promised time and our brand name is synonymous with reliability and dedication. We thrive on <span class="underline hover:no-underline transition-all duration-300 cursor-pointer font-semibold">customer satisfaction</span> and stay committed to serving them years after handing over their investments.</p>
+                <p>We have specialized teams dealing with targeted customer groups of our 'Classic Collection', 'Wellness Communities', 'Commercial Collection' and 'Luxury Collection'. These collections have been created as a result of thorough market analysis and years of experience in the sector.</p>
+                <p>We are the only real estate firm with several <span class="underline hover:no-underline transition-all duration-300 cursor-pointer font-semibold">other businesses</span> linked to the sector itself, essentially providing a one-stop solution for all our customers. We believe in constantly evolving and have introduced new features in our homes like home automation, beautiful landscaping, and wellness facilities.</p>
+                <p>In short, in nearly four decades, we have developed systems to deliver excellent homes and business spaces for customers in various segments of the market. To experience the joy of homeownership, to work with us as a Joint Venture Partner, or to invest in real estate, drop in your queries or <span class="underline hover:no-underline transition-all duration-300 cursor-pointer font-semibold">comments.</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Main Footer -->
+    <footer class="bg-[#1C1C1C] text-gray-300 border-t border-gray-700">
+        <div class="bg-[#EAEAEA] text-gray-800 py-8">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-12 text-center md:text-left">
+                <div>
+                    <h3 class="font-semibold text-[18px] uppercase">Subscribe to our newsletter</h3>
+                    <p class="text-xs text-[#878787]">Get all the latest updates easily</p>
+                </div>
+                <form class="flex flex-col sm:flex-row w-full sm:w-auto gap-2 justify-center md:justify-end">
+                    <input type="text" placeholder="Your Name" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <input type="email" placeholder="Your Email" class="px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 w-full sm:w-auto"/>
+                    <button type="submit" class="bg-[#1C1C1C] text-white px-4 py-2 rounded hover:bg-gray-800 text-sm w-full sm:w-auto">Connect</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Footer Links -->
+        <div class="max-w-7xl mx-auto py-8 px-12">
+            <div class="flex flex-col justify-center items-center gap-6">
+                <!-- Links -->
+                <div class="md:flex-row flex flex-col justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-wide text-center">
+                    <a href="#" class="hover:text-white text-[#878787]">Blog</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Newsletter</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Video</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Gallery</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Handed Over Projects</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Reviews</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Real Estate Update</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Career</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Feedback</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Privacy</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-4 text-[28px]">
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="text-center text-xs mt-6 text-[#878787] leading-relaxed">
+            <p>bti Celebration Point, Plot: 3 & 5, Road: 113/A, Gulshan-2, Dhaka-1212</p>
+            <p class="mt-1">bti - Building Technology & Ideas Ltd. © 1984–2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#"
+    class="fixed bottom-2 right-6 bg-green-500 text-white rounded-full p-1.5 shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center">
+    <!-- WhatsApp SVG Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12.04 2C6.58 2 2.04 6.54 2.04 12c0 2.1.55 4.06 1.6 5.8L2 22l4.3-1.55A9.96 9.96 0 0 0 12.04 22c5.46 0 9.99-4.54 9.99-10S17.5 2 12.04 2zm5.86 14.3c-.25.7-1.44 1.33-2 1.41-.53.08-1.2.11-1.94-.12-.45-.14-1.02-.32-1.77-.63-3.11-1.36-5.13-4.54-5.29-4.76-.15-.22-1.26-1.67-1.26-3.19 0-1.52.79-2.26 1.07-2.57.28-.3.61-.38.82-.38.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.62.85 2.14.93 2.3.07.16.12.34.02.55-.1.22-.15.35-.29.54-.15.18-.3.4-.43.54-.14.15-.28.31-.12.61.15.3.66 1.09 1.41 1.77.97.86 1.8 1.13 2.1 1.26.3.13.48.11.66-.07.18-.18.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.36.08.12.08.72-.17 1.42z"/>
+    </svg>
+    </a>
+
+
+
+    <!-- JavaScript for link-->
+    <script src="./main.js" defer></script>
+
+</body>
+</html>
