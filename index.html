@@ -17,111 +17,133 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px]  focus-within px-[45px] py-[10px]">
+    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px] px-[45px] py-[10px]">
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="items-center mx-auto md:mx-0">
             <img src="./image/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
-
             <!-- Main menu -->
             <ul id="main-menu" class="hidden md:flex md:items-center">
-                <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
+            <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
 
-                <!-- Properties -->
-                <li class="relative group has-submenu">
-                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
-                    <!-- Submenu -->
-                    <ul id="submenu-properties"
-                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
-                    </ul>
-                </li>
+            <!-- Properties -->
+            <li class="relative group has-submenu">
+                <button type="button"
+                class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
 
-                <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+                <!-- Submenu -->
+                <ul id="submenu-properties" class="absolute left-0 top-full mt-0 pt-3 w-52 bg-[#1C1C1C] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 hover:opacity-100 hover:visible hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                    <!-- Luxury (has right dropdown) -->
+                    <li class="relative group/submenu">
+                        <a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all flex justify-between items-center">Luxury
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </a>
 
-                <!--Businesses-->
-                <li class="relative group has-submenu">
-                    <button type="button" class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Businesses</button>
-                    <!-- Submenu -->
-                    <ul id="submenu-properties"
-                        class="absolute left-0 mt-4 w-52 bg-[#1C1C1C] rounded-md shadow-lg opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
-                        <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
-                    </ul>
-                </li>
-                <!-- Construction Status -->
-                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
-                <!-- NRB -->
-                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
-                <!-- Contact -->
-                <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">contact us</a></li>
-                
+                        <!-- Right-side dropdown -->
+                        <ul class="absolute left-full top-0 mt-2 w-44 bg-[#1C1C1C] opacity-0 invisible translate-x-2 group-hover/submenu:opacity-100 group-hover/submenu:visible group-hover/submenu:translate-x-0 hover:opacity-100 hover:visible hover:translate-x-0 transition-all duration-300 ease-out z-30">
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Dhaka</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Chattogram</a></li>
+                        </ul>
+                    </li>
 
-                <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
+                    <!-- Other submenu items -->
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness
+                        Communities</a></li>
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+
+            <!-- Businesses -->
+            <li class="relative group has-submenu">
+                <button type="button"
+                class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">
+                Businesses
+                </button>
+                <ul
+                class="absolute left-0 top-full mt-0 w-52 bg-[#1C1C1C] opacity-0 invisible translate-y-2 
+                group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                hover:opacity-100 hover:visible hover:translate-y-0 
+                transition-all duration-300 ease-out z-20">
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
+            <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
+            <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Contact Us</a></li>
+            <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
             </ul>
 
             <!-- Mobile menu button -->
-            <button id="nav-toggle" class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
-                <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button id="nav-toggle"
+            class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white"
+            aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+            <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-                </svg>
-                <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            </svg>
+            <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
+            </svg>
             </button>
         </div>
-
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden mt-3 px-2">
             <ul class="space-y-1">
-                <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
+            <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
 
-                <!-- Mobile Properties accordion -->
-                <li>
-                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-properties">
-                    Properties
-                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <!-- Mobile Properties accordion -->
+            <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none"
+                data-accordion-target="m-properties">
+                Properties
+                <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
+                </svg>
                 </button>
                 <ul id="m-properties" class="mt-1 ml-2 space-y-1 hidden">
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
                 </ul>
-                </li>
+            </li>
 
-                <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
+            <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
 
-                <!-- Mobile Businesses accordion -->
-                <li>
-                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none" data-accordion-target="m-businesses">
-                    Businesses
-                    <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <!-- Mobile Businesses accordion -->
+            <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none"
+                data-accordion-target="m-businesses">
+                Businesses
+                <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
+                </svg>
                 </button>
                 <ul id="m-businesses" class="mt-1 ml-2 space-y-1 hidden">
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
-                    <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
                 </ul>
-                </li>
+            </li>
 
-                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
-                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
-                <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">contact us</a></li>
-                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
+            <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
+            <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Contact Us</a></li>
+            <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
             </ul>
         </div>
     </nav>
+
 
     <!-- Slider Section -->
     <div class="flex h-[200px] md:h-screen justify-items-start w-full overflow-hidden m-0 p-0">
