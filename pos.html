@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', 'sans-serif';
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-[#1C1C1C] text-[#878787] text-[15px] px-[45px] py-[10px]">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="items-center mx-auto md:mx-0">
+            <img src="./image/logo-without-text-inverse-329856.svg" alt="Logo" class="h-[60px] w-auto"></a>
+            <!-- Main menu -->
+            <ul id="main-menu" class="hidden md:flex md:items-center">
+            <li class="menu-item"><a href="About.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">About Us</a></li>
+
+            <!-- Properties -->
+            <li class="relative group has-submenu">
+                <button type="button"
+                class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">Properties</button>
+
+                <!-- Submenu -->
+                <ul id="submenu-properties" class="absolute left-0 top-full mt-0 pt-3 w-52 bg-[#1C1C1C] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 hover:opacity-100 hover:visible hover:translate-y-0 transition-all duration-300 ease-out z-20">
+                    <!-- Luxury (has right dropdown) -->
+                    <li class="relative group/submenu">
+                        <a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all flex justify-between items-center">Luxury
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        </a>
+
+                        <!-- Right-side dropdown -->
+                        <ul class="absolute left-full top-0 mt-2 w-44 bg-[#1C1C1C] opacity-0 invisible translate-x-2 group-hover/submenu:opacity-100 group-hover/submenu:visible group-hover/submenu:translate-x-0 hover:opacity-100 hover:visible hover:translate-x-0 transition-all duration-300 ease-out z-30">
+                            <li><a href="p-Dhaka.html" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Dhaka</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Chattogram</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Other submenu items -->
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness
+                        Communities</a></li>
+                    <li class="submenu-item"><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="Lan.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Landowners</a></li>
+
+            <!-- Businesses -->
+            <li class="relative group has-submenu">
+                <button type="button"
+                class="px-[17px] py-2 flex items-center focus:outline-none hover:text-[#EAEAEA] transition-all duration-300 border-transparent group-hover:border-[#EAEAEA]">
+                Businesses
+                </button>
+                <ul
+                class="absolute left-0 top-full mt-0 pt-3 w-52 bg-[#1C1C1C] opacity-0 invisible translate-y-2 
+                group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                hover:opacity-100 hover:visible hover:translate-y-0 
+                transition-all duration-300 ease-out z-20">
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Luxury</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Classic</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Wellness Communities</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:text-[#EAEAEA] transition-all">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Construction Status</a></li>
+            <li class="menu-item"><a href="pos.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">NRB</a></li>
+            <li class="menu-item"><a href="contect.html" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Contact Us</a></li>
+            <li class="menu-item"><a href="#" class="px-[17px] hover:opacity-90 hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+
+            <!-- Mobile menu button -->
+            <button id="nav-toggle"
+            class="md:hidden absolute left-4 md:static z-30 inline-flex items-center justify-center rounded-md focus:outline-none focus:ring-2 focus:ring-white"
+            aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+            <svg id="nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+            <svg id="nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-3 px-2">
+            <ul class="space-y-1">
+            <li><a href="About.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">About Us</a></li>
+
+            <!-- Mobile Properties accordion -->
+            <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none"
+                data-accordion-target="m-properties">
+                Properties
+                <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+                </button>
+                <ul id="m-properties" class="mt-1 ml-2 space-y-1 hidden">
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li><a href="Lan.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Landowners</a></li>
+
+            <!-- Mobile Businesses accordion -->
+            <li>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-md hover:text-[#EAEAEA] focus:outline-none"
+                data-accordion-target="m-businesses">
+                Businesses
+                <svg class="w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+                </button>
+                <ul id="m-businesses" class="mt-1 ml-2 space-y-1 hidden">
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Luxury</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Classic</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Wellness Communities</a></li>
+                <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Construction Status</a></li>
+            <li><a href="pos.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">NRB</a></li>
+            <li><a href="contect.html" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Contact Us</a></li>
+            <li><a href="#" class="block px-3 py-2 rounded-md hover:text-[#EAEAEA]">Arshi Haider</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+   <section class="bg-[#F5F5F5]">
+        <div>
+            <img src="./image/banner_image_v2.jpg" alt="banner image" class="w-full h-[380px] object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto pt-12 py-2 px-6 flex flex-col gap-4">
+            <h1 class="text-center text-5xl px-6">টেকনো পস সফটওয়্যার এর মূল ফিচার এবং ফাংশন সমূহ</h1>
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-green-400 hover:text-gray-800 transition-colors duration-300"
+                viewBox="0 0 640 640"
+                fill="currentColor">
+                <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/>
+            </svg>
+            </a>
+        </div>
+   </section>
+
+   <!--card section-->
+    <section class="bg-[#F5F5F5] flex flex-col gap-4">
+        <!-- Card 1 -->
+        <div class="items-center bg-white">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-6 md:px-12 py-6">
+                <!-- Text Section -->
+                <div class="md:w-3/4">
+                    <h2 class="text-green-700 font-semibold text-xl mb-2">
+                        ইনভয়েস, বিল ও চালান প্রিন্ট করুন
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        টেক্সবেএ পস সফটওয়্যারের মাধ্যমে ফ্রেন্ডার বিল, ইনভয়েস, চালান, অর্ডার, খরচের ভাউচার তৈরি ও প্রিন্ট করতে পারবেন।
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="md:w-1/4 flex justify-center mt-4 md:mt-0">
+                 <img src="./image/invoice-1.png" alt="Invoice print" class="rounded-sm border border-gray-200 w-64 h-40 object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="items-center bg-white">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-6 md:px-12 py-6">
+                <!-- Text Section -->
+                <div class="md:w-3/4">
+                    <h2 class="text-green-700 font-semibold text-xl mb-2">
+                       ক্রয়, বিক্রয়, মেডিসিন স্টকের হিসাব
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        মেডিসিন ক্রয়, বিক্রয়ের হিসাব, কোন সাপ্লাইয়ারের কাছ থেকে কি মেডিসিন, কত মেডিসিন ক্রয় করলেন। সাপ্লাইয়ারকে কত টাকা পেমেন্ট করলেন, কত টাকা বাকি রাখলেন, ক্রেতার কাছে কত টাকার মেডিসিন বিক্রয় করলেন, কত পিচ বিক্রয় করলেন, কত টাকা ক্রেতার কাছে বাকি আছে তার যাবতীয় পূর্নাঙ্গ হিসাব রাখা যাবে টেকনো ফার্মেসী ম্যানেজমেন্ট সফটওয়ারের মাধ্যমে । এছাড়া ও ইনভেন্টরি ম্যানেজমেন্টের মাধ্যমে আপনি জানতে পারবেন আপনার স্টকের সব মেডিসিনের বর্তমান অবস্থা।
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="md:w-1/4 flex justify-center mt-4 md:mt-0">
+                 <img src="./image/invoice-2.png" alt="Invoice print" class="rounded-sm border border-gray-200 w-64 h-40 object-cover">
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="items-center bg-white">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-6 md:px-12 py-6">
+                <!-- Text Section -->
+                <div class="md:w-3/4">
+                    <h2 class="text-green-700 font-semibold text-xl mb-2">
+                       ইনভেন্টরি ম্যানেজমেন্ট
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                       কোন মেডিসিন কত বক্স আছে, মেয়াদ কবে শেষ হবে, কোন সাপ্লাইয়ার এর থেকে কি কি মেডিসিন কিনলেন সব কিছুই আপনি দেখতে পাবেন সফটওয়্যার এর মাধ্যমে। ইনভেন্টরি ম্যানেজমেন্টের মাধ্যমে আপনি জানতে পারবেন আপনার স্টকের সব মেডিসিনের বর্তমান অবস্থা।
+                    </p>
+                </div>
+                <!-- Image Section -->
+                <div class="md:w-1/4 flex justify-center mt-4 md:mt-0">
+                 <img src="./image/invoice-3.png" alt="Invoice print" class="rounded-sm border border-gray-200 w-64 h-40 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F5F5F5]">
+        <div class="max-w-6xl mx-auto ">
+            <div class="text-center py-12 space-y-4">
+                <h1 class="text-4xl">টেকনো ফার্মেসী ম্যানেজমেন্ট সফটওয়্যার এর প্যাকেজ সমূহ</h1>
+                <p class="text-sm">কি ভাবছেন এতো কিছুর জন্য সফটওয়্যারের দাম অনেক বেশি, একদমই না। আমরা দিচ্ছি খুব স্বল্প খরচে মাসিক এবং বাৎসরিক প্যাকেজের ভিত্তিতে এই সকল সুবিধা। আমাদের মাসিক এবং বাৎসরিক প্যাকেজ এর বিস্তারিত</p>
+           </div>
+           <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 pb-12">
+                <!-- Yearly Package Card -->
+                <div class="bg-white rounded-sm border border-green-400 p-6 transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-5">বছরিক স্ট্যান্ডার্ড প্যাকেজ</h2>
+                    <p class="text-sm text-gray-500 mb-4">সফটওয়্যার সেটআপ ফি টাকাঃ ৪৯৯৯ (এককালীন)</p>
+                    <p class="text-3xl  mb-4">
+                    ৯৬০০ টাকা <span class="text-base font-normal text-gray-600">/বছরিক</span>
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                            <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                            </svg>
+                            <span>বিজনেস লোকেশন - ১</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                            <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                            </svg>
+                            <span>স্টাফ ইউজার - ১০</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                            <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                            </svg>
+                            <span>আনলিমিটেড ইনভেন্টরি, বিল, চালান প্রিন্ট</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                            <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                            </svg>
+                            <span>ক্রয়, বিক্রয় ম্যানেজমেন্ট</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                            <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                            </svg>
+                            <span>অ্যাকাউন্টিং মডিউল</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Monthly Package Card -->
+                <div class="bg-white rounded-sm p-3 border border-green-400 transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">মাসিক স্ট্যান্ডার্ড প্যাকেজ</h2>
+                    <p class="text-sm text-gray-500 mb-4">সফটওয়্যার সেটআপ ফি টাকাঃ ৪৯৯৯ (এককালীন)</p>
+                    <p class="text-3xl  mb-4">
+                    ১০০০ টাকা <span class="text-base font-normal text-gray-600">/মাসিক</span>
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                        <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                        </svg>
+                        <span>বিজনেস লোকেশন - ১</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                        <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                        </svg>
+                        <span>স্টাফ ইউজার - ১০</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                        <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                        </svg>
+                        <span>আনলিমিটেড ইনভেন্টরি, বিল, চালান প্রিন্ট</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                        <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                        </svg>
+                        <span>ক্রয়, বিক্রয় ম্যানেজমেন্ট</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#16A34A"></circle>
+                        <path d="M17.2 8.2a.75.75 0 0 0-1.06-1.06L10 13.3 7.86 11.16a.75.75 0 0 0-1.06 1.06l2.75 2.75c.29.29.77.29 1.06 0l6.61-6.61z" fill="white"></path>
+                        </svg>
+                        <span>অ্যাকাউন্টিং মডিউল</span>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-gray-300 border-t border-gray-700">
+        <!-- Main Footer Links -->
+        <div class="max-w-7xl mx-auto py-8 px-12">
+            <div class="flex flex-col justify-center items-center gap-6">
+                <!-- Links -->
+                <div class="md:flex-row flex flex-col justify-center gap-x-4 gap-y-2 text-sm uppercase tracking-wide text-center">
+                    <a href="#" class="hover:text-white text-[#878787]">Blog</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Newsletter</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Video</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Gallery</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Handed Over Projects</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Reviews</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Real Estate Update</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Career</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Feedback</a>
+                    <a href="#" class="hover:text-white text-[#878787]">Privacy</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-4 text-[28px]">
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-[#878787]"><i class="fa-brands fa-square-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="text-center text-xs mt-6 text-[#878787] leading-relaxed">
+            <p>bti Celebration Point, Plot: 3 & 5, Road: 113/A, Gulshan-2, Dhaka-1212</p>
+            <p class="mt-1">bti - Building Technology & Ideas Ltd. © 1984–2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="#" class="fixed bottom-2 right-6 bg-green-500 text-white rounded-full p-1.5 shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12.04 2C6.58 2 2.04 6.54 2.04 12c0 2.1.55 4.06 1.6 5.8L2 22l4.3-1.55A9.96 9.96 0 0 0 12.04 22c5.46 0 9.99-4.54 9.99-10S17.5 2 12.04 2zm5.86 14.3c-.25.7-1.44 1.33-2 1.41-.53.08-1.2.11-1.94-.12-.45-.14-1.02-.32-1.77-.63-3.11-1.36-5.13-4.54-5.29-4.76-.15-.22-1.26-1.67-1.26-3.19 0-1.52.79-2.26 1.07-2.57.28-.3.61-.38.82-.38.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.62.85 2.14.93 2.3.07.16.12.34.02.55-.1.22-.15.35-.29.54-.15.18-.3.4-.43.54-.14.15-.28.31-.12.61.15.3.66 1.09 1.41 1.77.97.86 1.8 1.13 2.1 1.26.3.13.48.11.66-.07.18-.18.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.36.08.12.08.72-.17 1.42z"/>
+    </svg>
+    </a>
+
+
+</body>
+</html>
